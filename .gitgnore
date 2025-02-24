@@ -1,0 +1,6 @@
+*.log
+build/
+build
+CMakeLists.txt
+.DS_Store
+
