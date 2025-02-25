@@ -1,11 +1,9 @@
 #include "./headers/hello.h"
 
-int testingProcess = 0;
-
 int main(int argc, char *argv[]) {
   struct router mRouter;
 
-  shmOpen();
+  mq_open_method();
 
   return 0;
 }

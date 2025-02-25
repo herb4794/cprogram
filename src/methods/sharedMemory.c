@@ -46,3 +46,16 @@ void shmOpen() {
   // NOTE: release the shared memory object
   shm_unlink(shm_name);
 };
+
+void memoryBlock() {
+  char shm_name[1024] = {0};
+  sprintf(shm_name, "/letter%d", getgid());
+  int fd = shm_open(shm_name, O_RDWR | O_CREAT, 0777);
+  if (fd < 0) {
+    perror("shm_open");
+    exit(EXIT_FAILURE);
+  }
+  while (1) {
+  }
+
+}
