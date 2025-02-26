@@ -15,8 +15,9 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
 file(GLOB SRC
 "src/headers/*.h"
 "src/methods/*.c"
+"src/methods/**/*"
 "src/*.c"
 "src/*.h"
 )
 # Add an executable target
-add_executable(shm_process ${SRC})  # Specify the target name and source files
+add_executable(producers ${SRC})  # Specify the target name and source files
