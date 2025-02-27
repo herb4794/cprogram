@@ -30,7 +30,7 @@ void production() {
       break;
     }
 
-    printf("Received on producers: %s\n", read_buffer);
+    printf("%s\n", read_buffer);
   }
 
   close(mqdes);

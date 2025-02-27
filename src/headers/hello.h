@@ -47,4 +47,5 @@ void makefifoWrite();
 void shmOpen();
 void mq_open_method();
 void producers();
+void production();
 #endif  // !__HELLO_H__
